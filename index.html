@@ -1,0 +1,278 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Perdura — hire me to unhire me</title>
+<meta name="description" content="Hire me to unhire me. I sit next to you and we build your AI system around your real work, in a repository you own. Month to month, cancel any week.">
+
+<!-- This page is meant to be forwarded ("show this page to whoever you'd have to explain it to"),
+     so it has to preview properly in WhatsApp, LinkedIn, iMessage and email. -->
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Perdura">
+<meta property="og:title" content="Perdura — hire me to unhire me">
+<meta property="og:description" content="I'm not an expert in your field. You are. I sit next to you and we build your system around your real work, in a repository you own. $4,000 a month, cancel any week.">
+<meta property="og:url" content="https://roadrunner-78.github.io/site/">
+<meta property="og:locale" content="en_US">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Perdura — hire me to unhire me">
+<meta name="twitter:description" content="I'm not an expert in your field. You are. I sit next to you and we build your system around your real work, in a repository you own. $4,000 a month, cancel any week.">
+<link rel="canonical" href="https://roadrunner-78.github.io/site/">
+<meta name="theme-color" content="#2E5E4E" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#101512" media="(prefers-color-scheme: dark)">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='7' fill='%232E5E4E'/><text x='16' y='23' font-family='Georgia,serif' font-size='21' font-weight='600' fill='%23ffffff' text-anchor='middle'>P</text></svg>">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:ital,wght@0,400;0,600;1,400&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<!-- Source copy: sales/one-pager.md. Never edit copy here alone; rebuild from the one-pager.
+     Launch status is tracked in website/README.md. Verify the booking link, domain,
+     photo and share image before publishing; do not infer account status from this file. -->
+<style>
+  :root {
+    --ground: #F2F3F0;
+    --surface: #FFFFFF;
+    --ink: #16201B;
+    --muted: #5B6660;
+    --accent: #2E5E4E;
+    --accent-strong: #244A3E;
+    --accent-ink: #FFFFFF;
+    --rule: #D6DAD5;
+    --tint: #E7EEEA;
+    --serif: "IBM Plex Serif", Georgia, "Times New Roman", serif;
+    --sans: "IBM Plex Sans", "Helvetica Neue", Arial, sans-serif;
+    --mono: "IBM Plex Mono", "SFMono-Regular", Consolas, monospace;
+    color-scheme: light;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --ground: #101512; --surface: #171D19; --ink: #E7EAE5; --muted: #A3ADA6;
+      --accent: #7DBBA1; --accent-strong: #98CDB6; --accent-ink: #101512;
+      --rule: #2A332E; --tint: #1C2620; color-scheme: dark;
+    }
+  }
+  :root[data-theme="dark"] {
+    --ground: #101512; --surface: #171D19; --ink: #E7EAE5; --muted: #A3ADA6;
+    --accent: #7DBBA1; --accent-strong: #98CDB6; --accent-ink: #101512;
+    --rule: #2A332E; --tint: #1C2620; color-scheme: dark;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; background: var(--ground); color: var(--ink);
+    font-family: var(--sans); font-size: 17px; line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+  }
+  a { color: var(--accent); text-decoration-thickness: 1px; text-underline-offset: 3px; }
+  a:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; }
+  .wrap { max-width: 760px; margin: 0 auto; padding: 0 20px; }
+  header.top {
+    display: flex; align-items: baseline; justify-content: space-between; gap: 16px;
+    padding: 28px 0 18px; border-bottom: 1px solid var(--rule);
+  }
+  .wordmark { font-family: var(--serif); font-weight: 600; font-size: 22px; letter-spacing: 0.01em; color: var(--ink); text-decoration: none; }
+  .wordmark small { display: block; font-family: var(--mono); font-weight: 400; font-size: 11px; letter-spacing: 0.06em; text-transform: uppercase; color: var(--muted); margin-top: 2px; }
+  .btn {
+    display: inline-block; background: var(--accent); color: var(--accent-ink); text-decoration: none;
+    font-family: var(--sans); font-weight: 600; font-size: 15px; padding: 10px 16px; border-radius: 4px;
+    white-space: nowrap;
+  }
+  .btn:hover { background: var(--accent-strong); }
+  main { padding: 36px 0 24px; }
+  section { padding: 28px 0; border-bottom: 1px solid var(--rule); }
+  section.last { border-bottom: 0; }
+  .eyebrow { font-family: var(--mono); font-size: 12px; letter-spacing: 0.08em; text-transform: uppercase; color: var(--muted); margin: 0 0 12px; }
+  h1 { font-family: var(--serif); font-weight: 600; font-size: clamp(34px, 6vw, 48px); line-height: 1.1; margin: 0 0 18px; text-wrap: balance; }
+  p, li { max-width: 66ch; }
+  p { margin: 0 0 14px; }
+  .lede { font-size: 20px; line-height: 1.5; }
+  .gloss { font-family: var(--serif); font-style: italic; color: var(--muted); font-size: 16px; }
+  ol.steps { list-style: none; padding: 0; margin: 0; display: grid; gap: 14px; counter-reset: step; }
+  ol.steps li { display: grid; grid-template-columns: 30px 1fr; gap: 12px; align-items: baseline; }
+  ol.steps li::before { counter-increment: step; content: counter(step); font-family: var(--mono); font-size: 13px; color: var(--muted); border: 1px solid var(--rule); border-radius: 999px; width: 26px; height: 26px; display: inline-grid; place-items: center; }
+  ul.plain { padding-left: 1.1em; margin: 0; display: grid; gap: 8px; }
+  .statement { background: var(--surface); border: 1px solid var(--rule); border-radius: 6px; padding: 22px 22px 18px; margin: 4px 0 20px; }
+  .big { font-family: var(--serif); font-weight: 600; font-size: 26px; line-height: 1.2; margin: 0 0 6px; }
+  .statement p:last-child { margin-bottom: 0; }
+  .terms { display: grid; gap: 10px; margin: 0; padding: 0; list-style: none; }
+  .terms li { padding-left: 14px; border-left: 2px solid var(--accent); }
+  .phases { display: grid; gap: 12px; margin: 0; padding: 0; list-style: none; }
+  .phases li { background: var(--surface); border: 1px solid var(--rule); border-radius: 6px; padding: 14px 16px; }
+  .phases b { display: block; font-family: var(--mono); font-weight: 500; font-size: 12px; letter-spacing: 0.06em; text-transform: uppercase; color: var(--muted); margin-bottom: 4px; }
+  .verify { counter-reset: v; list-style: none; padding: 0; margin: 0; display: grid; gap: 10px; }
+  .verify li { display: grid; grid-template-columns: 26px 1fr; gap: 10px; }
+  .verify li::before { counter-increment: v; content: counter(v) "."; font-family: var(--mono); color: var(--muted); }
+  .quote { font-family: var(--serif); font-style: italic; font-size: 18px; border-left: 3px solid var(--accent); padding-left: 14px; margin: 16px 0 0; }
+  .about { display: grid; grid-template-columns: 1fr; gap: 18px; align-items: start; }
+  .about:has(> img.photo) { grid-template-columns: 96px 1fr; }
+  .photo { width: 96px; height: 96px; border-radius: 6px; object-fit: cover; border: 1px solid var(--rule); }
+  .cta { background: var(--surface); border: 1px solid var(--rule); border-radius: 6px; padding: 24px; }
+  .cta p { margin-bottom: 14px; }
+  footer { border-top: 1px solid var(--rule); padding: 20px 0 40px; font-size: 14px; color: var(--muted); display: flex; flex-wrap: wrap; gap: 8px 24px; justify-content: space-between; }
+  @media (max-width: 560px) {
+    .about:has(> img.photo) { grid-template-columns: 72px 1fr; }
+    .photo { width: 72px; height: 72px; }
+    header.top { flex-direction: column; align-items: flex-start; }
+  }
+  .skip {
+    position: absolute; left: -9999px; top: 0;
+    background: var(--accent); color: var(--accent-ink);
+    padding: 10px 14px; border-radius: 0 0 4px 0; z-index: 10; text-decoration: none;
+  }
+  .skip:focus { left: 0; }
+  @media (prefers-reduced-motion: reduce) { * { animation: none !important; transition: none !important; } }
+  /* This page gets printed and sent as a PDF; the one-pager is the same copy. */
+  @media print {
+    :root, :root:not([data-theme="light"]), :root[data-theme="dark"] {
+      --ground: #fff; --surface: #fff; --ink: #000; --muted: #444;
+      --accent: #000; --rule: #bbb; --tint: #fff; color-scheme: light;
+    }
+    body { font-size: 11pt; }
+    .btn, .skip { display: none; }
+    .cta::after { content: "Book at roadrunner-78.github.io/site/"; font-weight: 600; }
+    section { break-inside: avoid; padding: 14px 0; }
+    .phases li, .statement, .cta { break-inside: avoid; border: 1px solid #bbb; }
+    a { color: #000; text-decoration: none; }
+    header.top { border-bottom: 1px solid #bbb; }
+  }
+</style>
+</head>
+<body>
+
+<a class="skip" href="#top">Skip to content</a>
+<div class="wrap">
+  <header class="top">
+    <a class="wordmark" href="#top">Perdura<small>per-DOO-rah. Spanish for "it lasts."</small></a>
+    <!-- Booking link: create this event on cal.com (screening call, 30 min, the two form questions) before the site goes live. The scoping link is never public. -->
+    <a class="btn" href="https://cal.com/perdura/screening-call">Book a 30-minute screening call</a>
+  </header>
+
+  <main id="top">
+    <section>
+      <h1>Hire me to unhire me.</h1>
+      <p class="lede">I'm not an expert in your field. You are. I'll show you how to use AI properly in it, and then you won't need me.</p>
+      <p>I sit next to you and we build your system around your real work, in a repository you own on your own GitHub from the first commit. I don't do work without you.</p>
+      <p class="gloss">Perdura (per-DOO-rah): Spanish for "it lasts." You unhire me. The work stays.</p>
+    </section>
+
+    <section>
+      <p class="eyebrow">How it works</p>
+      <ol class="steps">
+        <li><span><b>Screening call.</b> 30 minutes, free. I qualify you or decline. No selling.</span></li>
+        <li><span><b>Scoping call.</b> 45 minutes, free. I learn your day to day and show you, on your own work, where a repository changes it. Ends with a start date.</span></li>
+        <li><span><b>Month to month.</b> $4,000 a month, paid at the start of the month. We work on your real work, on your screen. If you need me and I'm free, I get on a call; book ahead to be sure.</span></li>
+        <li><span><b>Cancel any week,</b> either of us, and I refund the weeks that are left. No term, no minimum.</span></li>
+        <li><span><b>When either of us thinks you don't need this anymore,</b> we switch to hourly on terms we agree then. Getting you there is the goal.</span></li>
+      </ol>
+    </section>
+
+    <section>
+      <p class="eyebrow">Things I've built with this</p>
+      <ul class="phases">
+        <li><b>An investor deck with a receipt for every number on it</b>Built from a lawyer-written offering memorandum, so it can't say anything the memorandum doesn't. Family, not a paying client — judge the deck, not the reference. They handed me the raw material and answered questions. A program reads the finished file and traces all 247 numbers across its 36 slides back to a source line. Numbers with no source: zero. If that isn't zero, the build stops.</li>
+        <li><b>A cattle operation I'm building from nothing</b>I'm not a cattleman, and at the start the AI wasn't either — it answered confidently and it was wrong. So I sat down with operators, an agronomist and a founder in the business, recorded twelve conversations and put them in the repo. What came out is an 83-term glossary in Spanish I keep open while I'm on a call: each term, the word a rancher will actually use instead, and where I can get it wrong. Where the answer changes by region, it tells me to stop and ask him.</li>
+        <li><b>The same repo runs the search</b>823 properties off Facebook, Instagram, TikTok and the portals — 216 of them listed nowhere, they exist only because a broker mentioned one out loud. It drafts my WhatsApp messages and loads each one into the right chat, and it never sends. I press send. When twenty candidates went through a screen I built to kill them, nine survived wounded and eleven died. That is the headline of my own report.</li>
+        <li><b>My own market research, built to prove me wrong</b>Sixteen years of futures data, about sixteen billion records — I can ask what the order book looked like at a given minute on a day in 2014 and get a real answer. For the first seven years the exchange never published which side was the buyer, so I rebuilt that myself, then checked the rebuild against the later years where the true answer exists. On the days I could check it matched every single trade, including the day the market fell apart in March 2020 — three quarters of a million trades. Then five of my own strategies went through it and all five were shelved. A system that can't kill your idea can't approve one either.</li>
+      </ul>
+      <p style="margin-top:14px">None of this is my field. Every one of them is built to tell me I'm wrong. You know your work; I build that check around it while you watch.</p>
+    </section>
+
+    <section>
+      <p class="eyebrow">What it costs</p>
+      <div class="statement">
+        <p class="big">$4,000 a month, paid at the start of the month.</p>
+        <p>Cancel any week and I refund the weeks that are left.</p>
+      </div>
+      <ul class="terms">
+        <li>It goes both ways. If it isn't working, I can end it too, and I refund you the weeks that are left.</li>
+        <li>One thing I ask: whoever I work with stays the same person or the same team. Owner, partner, or your juniors, your call. If the people keep changing, nobody learns.</li>
+      </ul>
+    </section>
+
+    <section>
+      <p class="eyebrow">The five</p>
+      <p style="margin-bottom:14px">Four you pay for. The fifth is where the paying stops.</p>
+      <ul class="phases">
+        <li><b>1. You stop pasting</b>Your files are too big to paste, so you paste a summary and hope. We stop that. We start with a real job off your desk — one you'd otherwise pay someone for — run against your actual files. I set it up in front of you: your own GitHub account, your name, your card. Then you break one of your files on purpose and put it back, my hands nowhere near the keyboard. If your work lives in Word, I tell you up front what works and what doesn't.</li>
+        <li><b>2. You stop repeating yourself</b>You explain your business again every session, and it still gets the same things wrong. So: when it gets something wrong, you don't argue with it. You write a rule in your own words, save it, and rerun the job to check whether it fixes the mistake. You write those lines so you can explain and change them yourself. You'll also decide what to keep out. Some work is a one-off. For that, just ask in a chat window like you always did.</li>
+        <li><b>3. You do one alone</b>At some point you do a whole job in here with me not in the room. Not a practice run — something a client or a partner is waiting for, that you'd have done anyway. You send it to them. They take it and use it. That's the test. I don't mark it. Then you do a different kind of job, because one job working is a demo and two is the real thing. Working well with me next to you proves less than it feels like.</li>
+        <li><b>4. You keep it true</b>Your answers start getting worse, and you assume the AI got worse. First, we check what changed in your files and rules. A note points at a folder you renamed. Two of your rules argue with each other. Something that stopped being true is still sitting in there. You work out which one it is and you fix it. One question does most of the work: is this still true now? If not, delete it — anything committed to your repository can be recovered from its history. If anyone else works with you, they get in here too.</li>
+        <li><b>5. You don't need me</b>There is no separate fee for ending, and no next monthly invoice. You keep the account, the files, the history, the whole thing — none of it was ever mine, and I'm removed from it the day you say so. If you want me after that, you pay me by the hour, by agreement, no standing call. I'll raise this before you do. I'd rather say it out loud than bill you for another month of watching you not need me.</li>
+      </ul>
+      <p style="margin-top:14px">There's no calendar here. You cross each one on your own work, and you'll know you crossed it because you watched yourself do it — not because I said so. You'll be at the last one on one part of your work while you're still at the first on something new. It's finished when you get through the whole list on something I've never seen, and I'll be the one who says it.</p>
+    </section>
+
+    <section>
+      <p class="eyebrow">What this replaces</p>
+      <p>An independent AI consultant runs $150–$350 an hour. Before hiring one, ask who will be able to maintain the work afterward.</p>
+      <p>A fixed-scope project runs $10,000–$15,000. You get the scope you agreed to.</p>
+      <p>Corporate AI training is priced per seat at $5,000 to $15,000 a person, so a team of four is $20,000 to $60,000 — and it's a class. Charging per head only makes you train fewer people.</p>
+      <p>And the chat window you're using now, where nothing you fix is written down anywhere you can see it, keep it, or hand to someone else.</p>
+      <p>Each of them asks you to commit before you know whether it works: a scope you sign, seats you buy, a term you agree to.</p>
+      <p>This is one to one. You tell me what your week actually looks like and correct me the whole way; we build around your files, your industry, your words. I tell you what's worth learning and what to ignore. A class can't know which of your files is the one that eats your Thursday afternoon. It lives in a repository on your account, yours with or without me.</p>
+      <p>The month isn't a count of hours, so there's nothing to divide. $4,000 a month, one fee whether it's you or your team, and nothing to sign for longer than the month you're in. You commit by starting; after that, how it's going decides. If I can't see where it comes back to you, I'll tell you and we don't start.</p>
+    </section>
+
+    <section>
+      <p class="eyebrow">How this is built so you don't have to take my word for it</p>
+      <ol class="verify">
+        <li><span>Everything lives in your GitHub, on your keys, on your card, from the first commit. I never hold a key, a repo, or a login. My access is revoked the day we stop.</span></li>
+        <li><span>I don't do work without you. Nothing happens in your systems that you didn't watch happen.</span></li>
+        <li><span>The most of your money I ever hold is one month, $4,000, paid at the start of it. Cancel any week and I refund the weeks that are left.</span></li>
+        <li><span>No term. You can stop any week and I send nothing more. You never have to fire me: when either of us thinks you don't need this, we switch to hourly.</span></li>
+        <li><span>It goes both ways. If it isn't working, I can end it too, and I refund you the weeks that are left.</span></li>
+      </ol>
+      <p class="quote">Show this page to whoever you'd have to explain it to. You can check these terms against your invoices, calendar and repository history.</p>
+    </section>
+
+    <section>
+      <p class="eyebrow">What you don't need to buy</p>
+      <p>Everything I teach can be learned for free. What you're paying for is that I've already made the mistakes, and I skip you past them on your own work. So don't buy:</p>
+      <ul class="plain">
+        <li>A wrapper platform marking up API costs 5 to 10x.</li>
+        <li>A $2,000 course before you've tested whether the material fits your work.</li>
+        <li>A consultant who bills you every month and never asks whether you still need him. Including me.</li>
+      </ul>
+    </section>
+
+    <section>
+      <p class="eyebrow">Who this is not for</p>
+      <ul class="plain">
+        <li>No one on your side will own it. Hire an agency; come back when someone will.</li>
+        <li>"Build us an AI product." Dev work. I'll refer a developer.</li>
+        <li>No budget. I'll tell you. Use the docs, a starter template, and one habit: a context folder, kept current and pruned.</li>
+        <li>The person changes every week. I can teach a person or a team; I can't teach a revolving door.</li>
+      </ul>
+    </section>
+
+    <section>
+      <p class="eyebrow">Why I do this</p>
+      <div class="about">
+        <!-- Add a real photo here and it lays out beside the text: <img class="photo" src="alejandro.jpg" alt="Alejandro" width="96" height="96"> -->
+        <div>
+          <p>This industry is full of scammers and I hate watching people get taken for thousands on wrapper platforms and worthless courses. Every person I show my workflow to asks me to teach them, so here it is. I need to know you'll save more than you pay me; that's what the free call is for. A happy client who no longer needs me is the entire point.</p>
+          <p>You'll own a system on your own GitHub. You never have to touch a command line, and I install everything myself while you watch — when that part goes wrong, it's my problem, not a test of whether you're technical.</p>
+          <p>Your keys, your card, a spend cap, your repo. I don't do work without you. Nothing of yours is shown to another prospect without written consent. Mutual NDA before the scoping call if you want it.</p>
+          <p>I teach in English or Spanish.</p>
+          <!-- First name stays: a nameless About block reads as hiding and undercuts the checkable claims above it. Never the surname. -->
+          <p style="margin:0"><b>Alejandro</b></p>
+        </div>
+      </div>
+    </section>
+
+    <section class="last">
+      <div class="cta">
+        <p class="big">Book a 30-minute screening call.</p>
+        <p>I'll tell you if the math doesn't work. The form asks two things: what you pay for today that you'd rather do yourself, and who on your side would own it.</p>
+        <a class="btn" href="https://cal.com/perdura/screening-call">Book the screening call</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <span>Perdura · roadrunner-78.github.io/site/</span>
+    <!-- Add the LLC name and city here once the LLC exists: <span>Perdura LLC, City, State</span> -->
+    <span>I teach in English or Spanish.</span>
+  </footer>
+</div>
+</body>
+</html>
