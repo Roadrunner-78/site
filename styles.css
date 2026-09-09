@@ -60,7 +60,7 @@ nav a:hover{color:var(--accent);text-decoration:underline}
 .request{padding:20px 0}.request .file-excerpt{border:0;padding:0}
 .flow-arrow{color:var(--accent);font-size:2rem;text-align:center;margin-top:56px}
 .draft{padding:24px;border-left:3px solid var(--accent);background:var(--paper)}
-.draft .file-excerpt{font-size:1rem}.draft h4{font-size:1rem;font-weight:600;margin-bottom:7px}.draft h4:not(:first-child){margin-top:18px}
+.draft .file-excerpt{font-size:1rem;white-space:normal}.draft h4{font-size:1rem;font-weight:600;margin-bottom:7px}.draft h4:not(:first-child){margin-top:18px}
 .example-review{margin-top:28px;display:grid;grid-template-columns:1fr 2.3fr;gap:40px;padding-top:24px;border-top:1px solid var(--rule)}
 .example-review h3{font:400 1.65rem/1.2 var(--serif)}
 .example-review p{font-size:1rem}.example-limit{color:var(--muted);font-size:.875rem;margin-top:24px;max-width:94ch}
@@ -112,10 +112,10 @@ nav a:hover{color:var(--accent);text-decoration:underline}
   h1{font-size:34pt;max-width:18ch}h2{font-size:27pt;max-width:none}h3{font-size:11pt}.eyebrow{font-size:8pt}
   .hero{padding:22pt 0}.hero-grid{gap:25pt}.outcome{font-size:12pt}.hero-body{font-size:10pt}.hero-copy p+p{margin-top:10pt}
   .fit{padding:15pt 0;gap:25pt}.fit h2{font-size:11pt}.fit p{font-size:10pt}
-  .section{padding:25pt 0}.section-head{display:block;margin-bottom:18pt}.section-head>.eyebrow{padding:0;margin-bottom:8pt}.intro{font-size:10pt;margin-top:10pt}
+  .section{padding:25pt 0}.section-head{display:block;margin-bottom:18pt;break-inside:avoid;break-after:avoid}.section-head>.eyebrow{padding:0;margin-bottom:8pt}.intro{font-size:10pt;margin-top:10pt}
   .service-block{padding:15pt 14pt 0}.service-number{font-size:22pt;margin-bottom:9pt}.service-block p{font-size:10pt}.service-block h3{font-size:11pt}
-  .example-section{break-before:page}.example-setup{font-size:10pt;margin-bottom:15pt}.source-grid{gap:0}.file{border-bottom:1px solid #bbb;padding:12pt;break-inside:avoid}.file-label,.file-path{font-size:8pt}.file-excerpt{font-size:9pt;margin-top:9pt;padding-top:9pt}
-  .task-flow{grid-template-columns:1fr 25pt 1.25fr;margin-top:12pt;break-inside:avoid}.request{padding:12pt 0}.flow-arrow{margin-top:30pt;font-size:20pt}.draft{padding:12pt}.draft .file-excerpt{font-size:9pt}.example-review{margin-top:15pt;padding-top:15pt;gap:25pt;break-inside:avoid}.example-review h3{font-size:16pt}.example-review p,.example-limit{font-size:9pt}.example-limit{margin-top:12pt}
+  .example-section{break-before:page}.example-setup{font-size:10pt;margin-bottom:10pt}.example-section .section-head{margin-bottom:12pt}.source-grid{gap:0}.file{border-bottom:1px solid #bbb;padding:9pt 12pt;break-inside:avoid}.file-label,.file-path{font-size:8pt}.file-excerpt{font-size:9pt;margin-top:9pt;padding-top:9pt}
+  .task-flow{grid-template-columns:1fr 25pt 1.25fr;margin-top:12pt;break-inside:avoid}.request{padding:12pt 0}.flow-arrow{margin-top:30pt;font-size:20pt}.draft{padding:12pt}.draft .file-excerpt{font-size:9pt}.draft h4{font-size:9pt;margin-bottom:5pt}.draft h4:not(:first-child){margin-top:10pt}.example-review{margin-top:10pt;padding-top:10pt;gap:25pt;break-inside:avoid}.example-review h3{font-size:16pt}.example-review p,.example-limit{font-size:9pt}.example-limit{margin-top:12pt}
   .keep-section{padding-bottom:0}.keep-list li,.proof-row{gap:25pt;padding:12pt 0;break-inside:avoid}.keep-list p,.proof-body{font-size:10pt}.proof-label,.metric-caption,.limitation{font-size:8pt}.metric{font-size:23pt}.proof-copy h3{font-size:11pt;margin-bottom:7pt}
   .engagement{break-before:page}.price-grid,.about-grid,.ownership{gap:25pt}.price-number{font-size:48pt}.price-unit,.price-summary,.price-billing,.terms dd{font-size:10pt}.price-summary{margin-top:12pt}.terms{gap:14pt}.terms dt{font-size:11pt}.billing-details{margin-top:15pt;padding:12pt 0}.billing-details summary{font-size:10pt;min-height:0}.billing-details p{font-size:9pt;margin-top:9pt}.billing-details::details-content{content-visibility:visible;height:auto}
   .ownership{padding:15pt 0;break-inside:avoid}.ownership h3{font-size:18pt}.ownership p{font-size:10pt}.calls{margin-top:18pt;break-inside:avoid}.calls>h3{font-size:20pt;margin-bottom:13pt}.call-grid{gap:25pt}.call-time{font-size:8pt}.call-body{font-size:10pt}
